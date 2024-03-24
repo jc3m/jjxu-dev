@@ -1,5 +1,5 @@
 import { Layout } from 'core/Layout';
-import { Landing } from 'pages/Landing';
+import { Landing } from 'pages/landing';
 
 function App() {
   return (
