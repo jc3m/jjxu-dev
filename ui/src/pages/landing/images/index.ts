@@ -2,6 +2,7 @@ import Bangkok from './bangkok.jpg';
 import BrooklynBridge from './brooklyn-bridge.jpg';
 import Denver from './denver-union-stagion.jpg';
 import Flower from './flower.jpg';
+import Ranier from './mt-ranier.jpg';
 import Yosemite from './yosemite.jpg';
 import Zion from './zion.jpg';
 
@@ -33,13 +34,18 @@ export const images: Image[] = [
     date: new Date('2023-06-10'),
   },
   {
+    src: Ranier,
+    alt: 'Mount Ranier, Washington',
+    date: new Date('2023-09-18'),
+  },
+  {
     src: Yosemite,
-    alt: 'Yosemite',
+    alt: 'Yosemite National Park, California',
     date: new Date('2022-11-04'),
   },
   {
     src: Zion,
-    alt: 'Yosemite',
+    alt: 'Zion National Park, Utah',
     date: new Date('2022-02-19'),
   },
 ];

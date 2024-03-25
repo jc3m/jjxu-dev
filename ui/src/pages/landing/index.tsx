@@ -18,7 +18,7 @@ export const Landing = () => {
         <img
           src={image.src}
           alt={image.alt}
-          className="shrink object-contain max-h-full md:max-h-[calc(90vh-130px)]"
+          className="shrink pt-6 object-contain max-h-full md:max-h-[calc(90vh-130px)]"
         />
         <p className="font-serif text-sm text-zinc-300 pt-4">{image.alt}</p>
         <p className="font-serif text-sm text-zinc-300">
@@ -26,8 +26,8 @@ export const Landing = () => {
         </p>
       </section>
       <section className="md:pr-16 flex flex items-center md:grow">
-        <div className="w-[300px] flex flex-col items-end space-y-1">
-          <h1 className="font-serif font-bold text-8xl pb-2 text-zinc-200">
+        <div className="w-[300px] flex flex-col items-end">
+          <h1 className="font-serif font-bold text-8xl pb-6 text-zinc-200">
             JJ Xu
           </h1>
           <p className="font-serif">
@@ -45,7 +45,7 @@ export const Landing = () => {
               jonathanjxu
             </a>
           </p>
-          <p className="font-serif text-right pt-4">
+          <p className="font-serif text-right pt-6">
             Software engineer. Fan of photography, robotics, and tennis.
           </p>
         </div>
