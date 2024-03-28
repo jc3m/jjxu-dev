@@ -3,10 +3,10 @@ resource "aws_route53_zone" "jjxu-dev" {
 }
 
 resource "aws_acm_certificate" "jjxu-dev" {
-  domain_name       = "jjxu.dev"
+  domain_name               = "jjxu.dev"
   subject_alternative_names = ["www.jjxu.dev"]
-  validation_method = "DNS"
-  key_algorithm = "RSA_2048"
+  validation_method         = "DNS"
+  key_algorithm             = "RSA_2048"
 
   provider = aws.us-east-1
 }
@@ -31,9 +31,9 @@ resource "aws_route53_record" "jjxu-dev-validation" {
 }
 
 resource "aws_route53_record" "jjxu-dev-www" {
-  zone_id         = aws_route53_zone.jjxu-dev.zone_id
-  type            = "A"
-  name            = "www.jjxu.dev"
+  zone_id = aws_route53_zone.jjxu-dev.zone_id
+  type    = "A"
+  name    = "www.jjxu.dev"
 
   alias {
     name                   = aws_cloudfront_distribution.jjxu-dev-prod-distribution.domain_name

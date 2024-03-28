@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "jjxu-dev-bucket" {
-  bucket = "www.jjxu.dev"
+  bucket        = "www.jjxu.dev"
   force_destroy = true
 
   tags = {
