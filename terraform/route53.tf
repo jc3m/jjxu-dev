@@ -42,6 +42,18 @@ resource "aws_route53_record" "jjxu-dev-www" {
   }
 }
 
+resource "aws_route53_record" "jjxu-dev" {
+  zone_id = aws_route53_zone.jjxu-dev.zone_id
+  type    = "A"
+  name    = "jjxu.dev"
+
+  alias {
+    name                   = aws_cloudfront_distribution.jjxu-dev-prod-distribution-root.domain_name
+    zone_id                = aws_cloudfront_distribution.jjxu-dev-prod-distribution-root.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
 resource "aws_acm_certificate_validation" "jjxu-dev" {
   certificate_arn         = aws_acm_certificate.jjxu-dev.arn
   validation_record_fqdns = [for record in aws_route53_record.jjxu-dev-validation : record.fqdn]

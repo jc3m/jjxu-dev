@@ -68,3 +68,17 @@ resource "aws_s3_bucket_policy" "jjxu-dev-bucket_public-read" {
   bucket = aws_s3_bucket.jjxu-dev-bucket.id
   policy = data.aws_iam_policy_document.jjxu-dev-bucket_public-read.json
 }
+
+# Root bucket redirect to www
+resource "aws_s3_bucket" "jjxu-dev-bucket-root" {
+  bucket = "jjxu.dev"
+}
+
+resource "aws_s3_bucket_website_configuration" "jjxu-dev-bucket-root" {
+  bucket = aws_s3_bucket.jjxu-dev-bucket-root.id
+
+  redirect_all_requests_to {
+    host_name = "www.jjxu.dev"
+    protocol  = "https"
+  }
+}

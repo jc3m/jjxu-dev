@@ -1,5 +1,11 @@
 # Terraform
 
+Auto-format terraform files.
+
+```sh
+$ terraform fmt
+```
+
 ## Route 53
 
 Debugging tools:
