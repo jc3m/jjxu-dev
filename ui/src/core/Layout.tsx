@@ -1,11 +1,11 @@
-import { PropsWithChildren } from 'react';
-import { Header } from './Header';
+import { Header } from './header';
+import { Outlet } from 'react-router-dom';
 
-export const Layout = (props: PropsWithChildren) => {
+export const Layout = () => {
   return (
-    <div className="bg-neutral-900 min-h-screen">
+    <div className="min-h-screen bg-neutral-900">
       <Header />
-      {props.children}
+      <Outlet />
     </div>
   );
 };

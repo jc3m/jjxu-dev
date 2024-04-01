@@ -1,12 +1,7 @@
-import { Layout } from 'core/Layout';
-import { Landing } from 'pages/landing';
+import { RouterProvider } from 'core/router-provider';
 
 function App() {
-  return (
-    <Layout>
-      <Landing />
-    </Layout>
-  );
+  return <RouterProvider />;
 }
 
 export default App;
