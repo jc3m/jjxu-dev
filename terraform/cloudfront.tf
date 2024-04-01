@@ -4,6 +4,13 @@ resource "aws_cloudfront_distribution" "jjxu-dev-prod-distribution" {
     origin_id   = aws_s3_bucket.jjxu-dev-bucket.id
   }
 
+  custom_error_response {
+    error_code            = 404
+    response_code         = 200
+    response_page_path    = "/index.html"
+    error_caching_min_ttl = 0
+  }
+
   restrictions {
     geo_restriction {
       restriction_type = "none"
@@ -32,6 +39,13 @@ resource "aws_cloudfront_distribution" "jjxu-dev-prod-distribution-root" {
   origin {
     domain_name = aws_s3_bucket.jjxu-dev-bucket-root.bucket_regional_domain_name
     origin_id   = aws_s3_bucket.jjxu-dev-bucket-root.id
+  }
+
+  custom_error_response {
+    error_code            = 404
+    response_code         = 200
+    response_page_path    = "/index.html"
+    error_caching_min_ttl = 0
   }
 
   restrictions {
