@@ -8,8 +8,8 @@ export const Personal = () => {
       </p>
       <p className="mb-4">
         This is my place to write about web development, robotics, and anything
-        else that interests me! Check out the <Link href="/blog">blog</Link> for
-        more.
+        else that interests me!
+        {/* Check out the <Link href="/blog">blog</Link> for more. */}
       </p>
       <h6 className="text-xl font-bold">What I've done</h6>
       <ul className="list-disc list-inside">

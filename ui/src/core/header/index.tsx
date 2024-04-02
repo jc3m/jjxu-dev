@@ -7,7 +7,7 @@ export const Header = () => {
       <header className="container m-auto h-full flex items-center justify-end space-x-6">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/blog">Blog</Link>
+        {/* <Link href="/blog">Blog</Link> */}
       </header>
     </div>
   );
