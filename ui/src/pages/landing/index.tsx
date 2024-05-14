@@ -7,6 +7,7 @@ const formatter = new Intl.DateTimeFormat('en-US', {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
+  timeZone: 'UTC',
 });
 
 export const Landing = () => {
