@@ -1,6 +1,8 @@
 import Bangkok from './bangkok.jpg';
 import BrooklynBridge from './brooklyn-bridge.jpg';
 import Denver from './denver-union-stagion.jpg';
+import EclipseT2 from './t2-manual.jpg';
+import EclipseT3 from './third-contact-manual.jpg';
 import Flower from './flower.jpg';
 import Ranier from './mt-ranier.jpg';
 import Yosemite from './yosemite.jpg';
@@ -27,6 +29,16 @@ export const images: Image[] = [
     src: Denver,
     alt: 'Union Station, Denver, Colorado',
     date: new Date('2022-01-11'),
+  },
+  {
+    src: EclipseT2,
+    alt: '2024 Eclipse, Carbondale, Illinois',
+    date: new Date('2024-04-08'),
+  },
+  {
+    src: EclipseT3,
+    alt: '2024 Eclipse, Carbondale, Illinois',
+    date: new Date('2024-04-08'),
   },
   {
     src: Flower,
