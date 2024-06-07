@@ -1,7 +1,9 @@
 import { useMemo } from 'react';
-import { images } from './images';
+
 import { Container } from 'core/container';
 import { Link } from 'components/link';
+
+import { images } from './images';
 
 const formatter = new Intl.DateTimeFormat('en-US', {
   day: 'numeric',

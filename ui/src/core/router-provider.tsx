@@ -2,10 +2,12 @@ import {
   createBrowserRouter,
   RouterProvider as RouterProviderBase,
 } from 'react-router-dom';
-import { Layout } from './layout';
+
 import { Landing } from 'pages/landing';
 import { About } from 'pages/about';
 import { Blog } from 'pages/blog';
+
+import { Layout } from './layout';
 
 const router = createBrowserRouter([
   {
