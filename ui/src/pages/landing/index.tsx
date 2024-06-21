@@ -37,7 +37,13 @@ export const Landing = () => {
               <h1 className="font-serif font-bold text-8xl pb-6 text-zinc-200">
                 JJ Xu
               </h1>
-              <p className="font-serif">
+              <p className="font-serif mb-2">
+                Founder at:{' '}
+                <Link external href="https://www.substationhq.com">
+                  Substation
+                </Link>
+              </p>
+              <p className="font-serif mb-2">
                 GitHub:{' '}
                 <Link external href="https://github.com/jc3m">
                   @jc3m
